@@ -1304,7 +1304,7 @@ wxSVGRect wxSVGCanvasText::GetExtentOfChar(unsigned long charnum)
 			bbox = chunk->chars[charnum].bbox;
 		return bbox.MatrixTransform(chunk->matrix);
     }
-    return wxSVGRect(0, 0, 0, 0);
+    return wxSVGRect();
 }
 
 long wxSVGCanvasText::GetCharNumAtPosition(const wxSVGPoint& point)
